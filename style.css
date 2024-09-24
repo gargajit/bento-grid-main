@@ -1,0 +1,123 @@
+body {
+    font-family: "DM Sans", sans-serif;;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 80px;
+}
+
+
+div {
+    align-content: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/*=======================================================*/
+/* div: Social media 10x faster with AI & 5 star reviews*/
+
+.purple-div {
+    background-color: hsl(256, 67%, 59%);
+    color: hsl(0, 0%, 100%);
+    grid-column: span 2;
+}
+
+.big-title {
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+.orange-span {
+    color: #e8c378;
+    
+}
+
+.light-body {
+    color: hsl(0, 0%, 78%);
+    margin-top: 0;
+}
+
+#five-stars {
+    width: 8em;
+}
+/*=======================================================*/
+
+
+/*=======================================================*/
+/* div: Multiple Accounts and platforms*/
+
+.white-div {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.medium-title {
+    font-size: 2.5rem;
+    font-weight: bold;  
+}
+/*=======================================================*/
+
+
+/*=======================================================*/
+/* div: Consistent Posting Schedule*/
+
+.yellow-div {
+    background-color: hsl(39, 100%, 71%);
+}
+
+/*=======================================================*/
+
+
+/*=======================================================*/
+/* div: Consistent Posting Schedule*/
+
+.light-purple-div {
+    background-color: hsl(254, 88%, 90%);
+    overflow: hidden;
+}
+/*=======================================================*/
+
+
+/*=======================================================*/
+/* div: Create Post*/
+
+.light-yellow-div {
+    background-color: hsl(31, 66%, 93%);
+}
+/*=======================================================*/
+
+
+
+.big-span {
+    font-size: 3rem;
+}
+
+.purple-span {
+    color: blueviolet;
+}
+
+
+.row-wise {
+    display: flex;
+}
+
+
+.grow-followers{
+    margin-left: 30px;
+}
+
+img.best-time {
+    height: 60%;
+    object-fit: cover;
+    object-position: 25px;
+
+}
+
+.light-purple-div > p {
+    margin: 0px;
+    padding: 30px;
+}
