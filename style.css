@@ -1,16 +1,18 @@
 body {
-    font-family: "DM Sans", sans-serif;;
+    font-family: "DM Sans", sans-serif;
+    background-color: #eee;
+    height: 100vh;
+    padding: 100px;
 }
 
 
 .grid-container {
     width: 100%;
-    /* height: 100vh; */
+    height: 80vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
-    grid-auto-columns: 100%;
 }
 
 
@@ -26,7 +28,7 @@ div {
 .purple-div {
     background-color: hsl(256, 67%, 59%);
     color: hsl(0, 0%, 100%);
-    grid-column: span 2;
+    /* grid-column: span 2; */
 }
 
 .big-title {
@@ -73,9 +75,7 @@ p.light-body {
     overflow: hidden;
 }
 
-.tall {
-    grid-row: span 2;
-}
+
 /*=======================================================*/
 
 
@@ -85,7 +85,7 @@ p.light-body {
 .light-purple-div {
     background-color: hsl(254, 88%, 90%);
     overflow: hidden;
-    grid-row: span 2;
+    /* grid-row: span 2; */
 }
 /*=======================================================*/
 
@@ -138,4 +138,40 @@ img.calender {
 img.multiple-platforms {
     object-fit: cover;
     object-position: 10% 10px;
+}
+
+
+
+
+/*======================================*/
+
+.social-media-wth-ai {
+    grid-area: 1 / 2 / 2 / 4;
+}
+
+.multiple-accounts {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.posting-schedule {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.social-media {
+    grid-area: 1 / -2 / 3 / -1;
+}
+
+.grow-followers {
+    grid-area: -2 / -3 / -1 / -1;
+}
+
+.audience-growth {
+    grid-area: -2 / 2 / -1 / 3;
+}
+
+.grid-inner-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    grid-area: 1 / 1 / 4 / 2;
 }
