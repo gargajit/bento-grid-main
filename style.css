@@ -5,14 +5,15 @@ body {
     padding: 100px;
 }
 
-.grid-container {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 20px;
-    margin: auto;
+@media (max-width: 767px) {
+    body {
+        padding: 0px;
+    }
+    div {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
 }
 
 /*======================================*/
@@ -21,35 +22,47 @@ body {
 
 /*======================================*/
 
-.social-media-wth-ai {
-    grid-area: 1 / 2 / 2 / 4;
-}
+@media (min-width: 768px) {
+    .grid-container {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+        margin: auto;
+    }
 
-.multiple-accounts {
-    grid-area: 2 / 2 / 3 / 3;
-}
+    .social-media-wth-ai {
+        grid-area: 1 / 2 / 2 / 4;
+    }
 
-.posting-schedule {
-    grid-area: 2 / 3 / 3 / 4;
-}
+    .multiple-accounts {
+        grid-area: 2 / 2 / 3 / 3;
+    }
 
-.social-media {
-    grid-area: 1 / -2 / 3 / -1;
-}
+    .posting-schedule {
+        grid-area: 2 / 3 / 3 / 4;
+    }
 
-.grow-followers {
-    grid-area: -2 / -3 / -1 / -1;
-}
+    .social-media {
+        grid-area: 1 / 4 / 3 / -1;
+    }
 
-.audience-growth {
-    grid-area: -2 / 2 / -1 / 3;
-}
+    .grow-followers {
+        grid-area: 3 / 3 / -1 / -1;
+    }
 
-.grid-inner-container {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
-    grid-area: 1 / 1 / 4 / 2;
+    .audience-growth {
+        grid-area: 3 / 2 / -1 / 3;
+    }
+
+    .grid-inner-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        grid-area: 1 / 1 / 4 / 2;
+    }
 }
 
 /*======================================*/
@@ -114,10 +127,12 @@ div {
     margin-top: 0;
 }
 
+.light-purple-div > p {
+    margin: 0px;
+    padding: 30px;
+}
+
 /*======================================*/
-
-
-
 
 
 
@@ -139,35 +154,37 @@ div {
 
 
 
-
+/*======================================*/
 
 #five-stars {
-    width: 8em;
+    width: 12em;
 }
 
-
-
-img.best-time {
+#best-time {
     height: 60%;
     object-fit: cover;
 }
 
-img.calender {
+#calender {
     object-fit: cover;
     object-position: 5px 10%;
 }
 
-img.multiple-platforms {
+#multiple-platforms {
     object-fit: cover;
     object-position: 10% 10px;
 }
 
 
+/*======================================*/
 
-.light-purple-div > p {
-    margin: 0px;
-    padding: 30px;
-}
+
+
+/*======================================*/
+
+
+
+
 
 
 
